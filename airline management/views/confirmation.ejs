@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        <div class="details">
+            <h2>Passenger Details</h2>
+            <p><strong>First Name:</strong> <%= passengerDetails.firstName %></p>
+            <p><strong>Last Name:</strong> <%= passengerDetails.lastName %></p>
+            <p><strong>Gender:</strong> <%= passengerDetails.gender %></p>
+            <p><strong>Age:</strong> <%= passengerDetails.age %></p>
+            <p><strong>Email:</strong> <%= passengerDetails.email %></p>
+            <p><strong>Phone:</strong> <%= passengerDetails.phone %></p>
+        </div>
+        <div class="details">
+            <h2>Flight Details</h2>
+            <p><strong>Flight Number:</strong> <%= flightData.flightNumber %></p>
+            <p><strong>Departure Time:</strong> <%= flightData.departureTime %></p>
+            <p><strong>Departure Airport:</strong> <%= flightData.departureAirport %></p>
+            <p><strong>Arrival Time:</strong> <%= flightData.arrivalTime %></p>
+            <p><strong>Arrival Airport:</strong> <%= flightData.arrivalAirport %></p>
+            <p><strong>Date:</strong> <%= flightData.date %></p>
+            <p><strong>Price:</strong> <%= flightData.price %></p>
+        </div>
+    </div>
+</body>
+</html>
+``
